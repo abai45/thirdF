@@ -1,0 +1,108 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(62, 90, 151);
+    height: 60px;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color:white;
+    margin:20px;
+}
+.navbar .logo a {
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar .nav a {
+    font-size: 18px;
+}
+.main {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 24% 50% 24%;
+    gap: 20px;
+}
+.main .reg .reg__mail {
+    font-size: 18px;
+    margin:0;
+}
+.main .reg input {
+    font-size: 17px;
+    color:rgb(80, 80, 80);
+    margin: 15px 0 15px 0;
+    padding: 3px 0px 0px 3px;
+}
+.button {
+    display: inline-block;
+    overflow: hidden;
+    background-color: rgb(3, 156, 3);
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+.button-inner {
+    width: 80px; 
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.main .reg .reg__text {
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .reg .reg__text a {
+    text-decoration: none;
+}
+.main .content .content__block .content__title{
+    margin:0 0 5px 0;
+    color: rgb(62, 90, 151);
+}
+.main .content * {
+    margin:0;
+}
+.main .content {
+    display: grid;
+    grid-template-rows: repeat(3,500px);
+    grid-auto-rows: minmax(550px, 600px);
+    gap:10px;
+}
+.main .content .content__block img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.main .content .content__block .content__text {
+    font-size: 16px;
+    text-align: justify;
+
+}
+.main .content .content__block .content__text span {
+    font-weight: bold;
+}
+.main .table tr * {
+    padding: 5px;
+}
+.main .table tr th{
+    background-color: black;
+    color: white;
+}
+.main .table .firstT  * {
+    background-color: rgb(1, 94, 24);
+    color: white;
+}
+.main .table .secondT * {
+    background-color: rgba(22, 185, 62, 0.5) ;
+    overflow: hidden;
+}
+tr:nth-last-child(-n+3) {
+    background-color: rgba(204, 107, 224, 0.5);
+}
+
